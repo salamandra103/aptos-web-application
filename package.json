@@ -9,14 +9,22 @@
   },
   "dependencies": {
     "@aptos-labs/wallet-adapter-react": "^0.2.2",
+    "@martianwallet/aptos-wallet-adapter": "0.0.2",
+    "@pontem/wallet-adapter-plugin": "^0.1.4",
+    "@rise-wallet/wallet-adapter": "^0.1.2",
+    "@spika/aptos-plugin": "^0.1.2",
+    "@trustwallet/aptos-wallet-adapter": "^0.1.6",
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "aptos": "^1.6.0",
+    "fewcha-plugin-wallet-adapter": "^0.1.1",
+    "msafe-plugin-wallet-adapter": "^0.1.0",
     "petra-plugin-wallet-adapter": "^0.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -27,6 +35,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
+    "node-sass": "^8.0.0",
     "prettier": "^2.8.3"
   },
   "browserslist": {

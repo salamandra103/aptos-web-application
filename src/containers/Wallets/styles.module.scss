@@ -1,0 +1,92 @@
+.container {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(#000, .1);
+    max-width: 500px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 100%;
+    transform: translateX(150%);
+    transition: transform .3s;
+}
+
+.containerActive {
+    composes: container;
+    transform: translateX(0)
+}
+
+.list {}
+
+.caption {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.item {
+    padding: 10px 10px;
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 100%;
+    transition: .2s;
+    min-height: 45px;
+    cursor: pointer;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &:hover:not([data-active="true"]) {
+        transform: translateX(15px);
+        max-width: calc(100% - 15px);
+        background-color: #323232;
+        color: #fff;
+    }
+
+    &[data-active="true"] {
+        pointer-events: none;
+    }
+}
+
+.itemActive {
+    composes: item;
+    background-color: #3fc38a;
+    color: #fff;
+
+
+}
+
+.name {
+    flex: 1 0 auto;
+}
+
+.icon {
+    max-width: 25px;
+    margin-right: 5px;
+}
+
+.button {
+    border-radius: 10px;
+}
+
+.buttonClose {
+    composes: button from 'styles.scss';
+    min-height: 45px;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.iconButton {
+    // color: red;
+    // border-radius: 999px;
+
+}
