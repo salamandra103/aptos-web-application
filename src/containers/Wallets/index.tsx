@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 export const Wallets = () => {
   const { wallets, connect, wallet } = useWallet()
 
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
   const [currentWallet, setCurrentWallet] = useState(localStorage.getItem('AptosWalletName') || '')
 
   const connectToWallet = async (wallet: (typeof wallets)[0]) => {

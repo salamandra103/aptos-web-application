@@ -1,0 +1,14 @@
+.container {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr;
+}
+
+.mainContent {}

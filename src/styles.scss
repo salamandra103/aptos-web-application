@@ -11,13 +11,8 @@
 
 body {
     font-size: 14px;
-}
-
-.App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+    max-width: 100wv;
+    overflow-x: hidden;
 }
 
 ul,

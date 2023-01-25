@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import { ToastContainer } from 'react-toastify'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { useWallet } from '@aptos-labs/wallet-adapter-react'
 
 import { useAptos } from 'hooks/useAptos'
 
-import { SettingTools } from 'containers/SettingTools'
+import { Main } from 'layout/Main'
+
+import { routers } from 'routers'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -29,8 +32,9 @@ function App() {
 
   return (
     <div className="App">
+      <RouterProvider router={createBrowserRouter(routers)} />
+
       <ToastContainer />
-      <SettingTools />
     </div>
   )
 }
